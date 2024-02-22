@@ -39,5 +39,21 @@ Data normalization is a crucial step before comparing SKUs. This includes removi
 
 - **Cosine Similarity**: By converting SKUs into non-zero vectors, we can calculate the cosine similarity between the MECP SKU vector and competitor SKU vectors. A method for encoding SKUs into vectors will be developed as part of this approach.
 
+### Research Questions and Solutions Overview
+
+As part of our initiative to develop the MECP Price Comparator, we've pinpointed key research questions essential for the project's success, accompanied by streamlined solutions:
+
+1. **SKU Standardization Across Platforms**
+   - **Challenge**: Ensuring precise SKU matches across diverse platforms.
+   - **Approach**: Implement a preprocessing algorithm to clean and normalize SKUs, removing extraneous characters for consistent comparisons.
+
+2. **Efficient Large Dataset Comparison**
+   - **Challenge**: Comparing extensive datasets of SKUs and prices effectively.
+   - **Approach**: Utilize optimized algorithms like Levenshtein Distance for smaller datasets and adopt vectorization for scalability. Enhance efficiency through data indexing and parallel processing.
+
+3. **Normalization for Equitable Price Comparison**
+   - **Challenge**: Adjusting price comparisons to account for differing product quantities.
+   - **Approach**: Create a normalization algorithm that standardizes price to a uniform unit of measurement, ensuring fair comparisons across packaging variations.
+
 After identifying matching products, we will compare their prices, taking product quantity into account to ensure an accurate comparison.
 
