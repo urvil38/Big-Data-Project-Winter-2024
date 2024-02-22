@@ -39,7 +39,7 @@ Data normalization is a crucial step before comparing SKUs. This includes removi
 
 - **Cosine Similarity**: By converting SKUs into non-zero vectors, we can calculate the cosine similarity between the MECP SKU vector and competitor SKU vectors. A method for encoding SKUs into vectors will be developed as part of this approach.
 
-### Research Questions and Solutions Overview
+### Research Questions
 
 As part of our initiative to develop the MECP Price Comparator, we've pinpointed key research questions essential for the project's success, accompanied by streamlined solutions:
 
