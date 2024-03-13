@@ -1,14 +1,14 @@
-## MECP Price Comparator Project
+## Pneumonia Detection
 
-MECP (Mid East Canadian Pharmaceutical) is an online pharmaceutical retailer looking to enhance its market competitiveness by implementing an efficient algorithm to compare product prices with those of its competitors, Life Supply and Medical Warehouse. The objective is to accurately identify price discrepancies for identical or similar products based on their SKUs (Stock Keeping Units), despite variations in SKU formats and product quantities across different websites.
+Our project focuses on creating a robust and reliable system designed to classify X-ray images of lungs into distinct classes, including COVID-19, bacterial pneumonia, viral pneumonia, lung opacity, and normal cases. The data for this project is organized into three key categories: training, validation, and test sets, ensuring comprehensive learning and evaluation phases. This endeavor aims to significantly enhance healthcare delivery and improve patient outcomes by leveraging a dataset partitioned into training, validation, and test sets. By distinguishing between these conditions effectively, our project seeks to enhance medical diagnostic processes significantly.
 
 ### Problem Statement
 
-The project is divided into two primary components:
+The project is structured around two core objectives:
 
-1. **Data Collection**: Develop scripts to extract product details, including SKUs and prices from the websites of the three companies: mecp.ca, medicalwarehouse.ca, and lifesupply.ca. This step involves navigating through the complexities of differing SKU formats and product quantities.
+1. **Data Preparation**: Compiling a comprehensive dataset of labeled X-ray images. This involves collecting, preprocessing, and augmenting images to ensure a diverse and representative dataset for training our models.
 
-2. **Data Analysis and Comparison**: Implement an efficient algorithm to accurately match products across the providers by SKU and compare their prices, taking into account the quantity in which each product is sold.
+2. **Model Training and Evaluation**: Training and fine-tuning ResNet and EfficientNet models on our dataset. The goal is to compare these models in terms of accuracy, efficiency, and their ability to generalize from training data to unseen X-ray images.
 
 ### Challenges
 
@@ -28,32 +28,22 @@ Each class has over 700 X-ray images:
 | Lung Opacity        | An area that appears dark or cloudy which appears on X-ray(can occur on healthy lungs)|
 | Normal              | Normal healthy lungs                                                                 |
 
-
 ### Data Preprocessing
 
-Data normalization is a crucial step before comparing SKUs. This includes removing spaces and non-alphanumeric characters from SKUs to facilitate accurate distance calculations.
+Our preprocessing workflow involves resizing images to a consistent dimension, normalizing pixel values, and applying data augmentation (e.g., rotation, flipping) to enhance model training.
 
 ### Comparison Approaches
 
-- **Levenshtein Distance**: This algorithm will measure the similarity between MECP SKUs and those of competitors. Optimizations may be necessary to scale this approach for large datasets.
+- **ResNet**: We will utilize the ResNet architecture, known for its deep residual learning framework, to capture complex patterns in the data.
+ 
+- **EfficientNet**: EfficientNet will be used for its scalable architecture, allowing us to efficiently manage model complexity and computational cost.
 
-- **Cosine Similarity**: By converting SKUs into non-zero vectors, we can calculate the cosine similarity between the MECP SKU vector and competitor SKU vectors. A method for encoding SKUs into vectors will be developed as part of this approach.
+### Key Research Questions
 
-### Research Questions
+1. **ResNet vs. EfficientNet Performance**: How do ResNet and EfficientNet compare in terms of accuracy and computational efficiency for pneumonia detection in our dataset?
+   
+2. **Preprocessing and Augmentation Impact**: Which preprocessing and data augmentation techniques are most effective for each model in improving generalization to new images?
 
-As part of our initiative to develop the MECP Price Comparator, we've pinpointed key research questions essential for the project's success, accompanied by streamlined solutions:
+3. **Class Imbalance Mitigation**: What strategies are most effective in balancing the class distribution for both models, ensuring accurate detection across all pneumonia types?
 
-1. **SKU Standardization Across Platforms**
-   - **Challenge**: Ensuring precise SKU matches across diverse platforms.
-   - **Approach**: Implement a preprocessing algorithm to clean and normalize SKUs, removing extraneous characters for consistent comparisons.
-
-2. **Efficient Large Dataset Comparison**
-   - **Challenge**: Comparing extensive datasets of SKUs and prices effectively.
-   - **Approach**: Utilize optimized algorithms like Levenshtein Distance for smaller datasets and adopt vectorization for scalability. Enhance efficiency through data indexing and parallel processing.
-
-3. **Normalization for Equitable Price Comparison**
-   - **Challenge**: Adjusting price comparisons to account for differing product quantities.
-   - **Approach**: Create a normalization algorithm that standardizes price to a uniform unit of measurement, ensuring fair comparisons across packaging variations.
-
-After identifying matching products, we will compare their prices, taking product quantity into account to ensure an accurate comparison.
-
+By addressing these questions, our team aims to develop a reliable and efficient tool for pneumonia detection, offering valuable support to healthcare professionals.
