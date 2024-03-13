@@ -12,9 +12,8 @@ The project is structured around two core objectives:
 
 ### Challenges
 
-- **SKU Variation**: Identical products may have SKUs that differ in prefixes, use of hyphens, or underscores across different websites. A key challenge is to standardize and match these SKUs accurately.
-  
-- **Price and Quantity Discrepancy**: The price listed for a product may represent a single unit or a case, which varies across websites. The algorithm must adjust for these differences to ensure a fair price comparison.
+- **Variability in X-ray Images**: Addressing differences in image quality, patient positioning, and visible artifacts to ensure consistent model performance.
+- **Class Imbalance**: Managing uneven distribution of classes within the dataset, particularly the lower prevalence of COVID-19 cases, to avoid model bias.
 
 ### Dataset Specifications
 
