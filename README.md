@@ -17,7 +17,12 @@ The project is structured around two core objectives:
 
 ### Dataset Specifications
 
-Each class has over 700 X-ray images:
+**Dataset:** [https://www.kaggle.com/datasets/edoardovantaggiato/covid19-xray-two-proposed-databases](https://www.kaggle.com/datasets/edoardovantaggiato/covid19-xray-two-proposed-databases)
+
+
+![](./docs/img.png)In Order: COVID-19, Viral Pneumonia, Bacteria Pneumonia, Lung Opacity, Normal
+
+Each class has over 5000 X-ray images:
 
 | Column              | Details                                                                              |
 |---------------------|--------------------------------------------------------------------------------------|
