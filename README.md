@@ -18,16 +18,16 @@ The project is divided into two primary components:
 
 ### Dataset Specifications
 
-Each provider's dataset will contain a list of medical products with the following attributes:
+Each class has over 200 X-ray images:
 
-| Column        | Details                                                       |
-|---------------|---------------------------------------------------------------|
-| SKU           | Unique code to identify the product                           |
-| Price         | Price of the product (may represent a single unit or a case)  |
-| Description   | Detailed product information, including name and colors       |
-| Brand         | Brand name of the product                                     |
-| Packaging     | Packaging type (single unit or a case)                        |
-| Availability  | Product availability status                                   |
+| Column              | Details                                                                              |
+|---------------------|--------------------------------------------------------------------------------------|
+| Covid-19            | Lungs infected with the covid 19 virus                                               |
+| Bacterial Pneumonia | Pneumonia-infected lungs given from various bacteria                                 |
+| Viral Pneumonia     | Pneumonia-infected lungs given from viruses                                          |
+| Lung Opacity        | An area that appears dark or cloudy which appears on xray(can occur on healthy lungs)|
+| Normal              | Normal healthy lungs                                                                 |
+
 
 ### Data Preprocessing
 
