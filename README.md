@@ -24,7 +24,7 @@ Each class has over 700 X-ray images:
 | Covid-19            | Lungs infected with the covid 19 virus                                               |
 | Bacterial Pneumonia | Pneumonia-infected lungs given from various bacteria                                 |
 | Viral Pneumonia     | Pneumonia-infected lungs given from viruses                                          |
-| Lung Opacity        | An area that appears dark or cloudy which appears on X-ray(can occur on healthy lungs)|
+| Lung Opacity        | Other lung diseases that are not Pneumonia                                           |
 | Normal              | Normal healthy lungs                                                                 |
 
 ### Data Preprocessing
