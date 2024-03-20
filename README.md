@@ -1,6 +1,6 @@
 ## Pneumonia Detection
 
-Our project focuses on creating a robust and reliable system designed to classify X-ray images of lungs into distinct classes, including COVID-19, bacterial pneumonia, viral pneumonia, lung opacity, and normal cases. The data for this project is organized into three key categories: training, validation, and test sets, ensuring comprehensive learning and evaluation phases. This endeavor aims to significantly enhance healthcare delivery and improve patient outcomes by leveraging a dataset partitioned into training, validation, and test sets. By distinguishing between these conditions effectively, our project seeks to enhance medical diagnostic processes significantly.
+Our project focuses on creating a robust and reliable system designed to classify X-ray images of lungs into distinct classes, including COVID-19, viral pneumonia, lung opacity, and normal cases. The data for this project is organized into three key categories: training, validation, and test sets, ensuring comprehensive learning and evaluation phases. This endeavor aims to significantly enhance healthcare delivery and improve patient outcomes by leveraging a dataset partitioned into training, validation, and test sets. By distinguishing between these conditions effectively, our project seeks to enhance medical diagnostic processes significantly.
 
 ### Problem Statement
 
@@ -17,17 +17,16 @@ The project is structured around two core objectives:
 
 ### Dataset Specifications
 
-**Dataset:** [https://www.kaggle.com/datasets/edoardovantaggiato/covid19-xray-two-proposed-databases](https://www.kaggle.com/datasets/edoardovantaggiato/covid19-xray-two-proposed-databases)
+**Dataset:** [https://www.kaggle.com/datasets/tawsifurrahman/covid19-radiography-database](https://www.kaggle.com/datasets/tawsifurrahman/covid19-radiography-database)
 
 
-![](./docs/img.png)In Order: COVID-19, Viral Pneumonia, Bacteria Pneumonia, Lung Opacity, Normal
+![](./docs/img.png)In Order: COVID-19, Viral Pneumonia, Lung Opacity, Normal
 
 Each class has over 5000 X-ray images:
 
 | Column              | Details                                                                              |
 |---------------------|--------------------------------------------------------------------------------------|
 | Covid-19            | Lungs infected with the covid 19 virus                                               |
-| Bacterial Pneumonia | Pneumonia-infected lungs given from various bacteria                                 |
 | Viral Pneumonia     | Pneumonia-infected lungs given from viruses                                          |
 | Lung Opacity        | Other lung diseases that are not Pneumonia                                           |
 | Normal              | Normal healthy lungs                                                                 |
